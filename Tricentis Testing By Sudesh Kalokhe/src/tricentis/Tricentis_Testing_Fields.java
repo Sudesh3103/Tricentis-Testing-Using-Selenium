@@ -32,13 +32,13 @@ public class Tricentis_Testing_Fields{
 		//Check if the Make dropdown field handles valid Make selection
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-    	driver.get("https://sampleapp.tricentis.com/101/app.php");
-    	driver.findElement(By.id("nav_automobile")).click();
+    	        driver.get("https://sampleapp.tricentis.com/101/app.php");
+    	        driver.findElement(By.id("nav_automobile")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.id("make")).click();
 		Thread.sleep(3000);
 		WebElement make = driver.findElement(By.xpath("//select[@name='Make']")); 
-     	Select se = new Select(make);
+     	        Select se = new Select(make);
 		Thread.sleep(3000);
 		se.selectByVisibleText("Toyota");
 		Thread.sleep(3000);
